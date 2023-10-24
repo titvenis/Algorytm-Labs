@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int rookX, rookY, figureX, figureY;
+    std::cin >> rookX >> rookY >> figureX >> figureY;
+
+    if (rookX == figureX || rookY == figureY) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
