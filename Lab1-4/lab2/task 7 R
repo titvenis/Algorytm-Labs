@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    int k, m, n;
+    std::cin >> k >> m >> n;
+
+    int time_per_cutlet = 2 * m;
+    int batches = n / k;
+    int total_time = batches * time_per_cutlet;
+
+    if (n % k != 0) {
+        total_time += time_per_cutlet; // Добавляем время на последнюю партию котлет
+    }
+
+    std::cout << total_time << std::endl;
+
+    return 0;
+}
