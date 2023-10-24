@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    int queenX, queenY, figureX, figureY;
+    std::cin >> queenX >> queenY >> figureX >> figureY;
+
+   
+    if (queenX == figureX || queenY == figureY || std::abs(queenX - figureX) == std::abs(queenY - figureY)) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
