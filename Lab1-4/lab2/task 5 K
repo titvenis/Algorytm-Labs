@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    int knightX, knightY, figureX, figureY;
+    std::cin >> knightX >> knightY >> figureX >> figureY;
+
+    int deltaX = std::abs(knightX - figureX);
+    int deltaY = std::abs(knightY - figureY);
+
+    if ((deltaX == 1 && deltaY == 2) || (deltaX == 2 && deltaY == 1)) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
