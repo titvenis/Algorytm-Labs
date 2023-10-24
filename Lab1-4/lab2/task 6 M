@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+    int k;
+    std::cin >> k;
+    
+    int board_size = 1;
+    int total_chips = 1;
+
+    while (total_chips < k) {
+        board_size += 1;
+        total_chips += 4;
+    }
+
+    if (total_chips == k) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
